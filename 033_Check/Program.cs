@@ -11,20 +11,16 @@ namespace _033_Check
         static void Main(string[] args)
         {
             Console.Write("국어 점수 입력하세요: ");
-            string str1 = Console.ReadLine();
-            int kor = int.Parse(str1);
+            int kor = int.Parse(Console.ReadLine());
 
             Console.Write("수학 점수 입력하세요: ");
-            string str2 = Console.ReadLine();
-            int mat = int.Parse(str2);
+            int mat = int.Parse(Console.ReadLine());
 
             Console.Write("사회 점수 입력하세요: ");
-            string str3 = Console.ReadLine();
-            int soc = int.Parse(str3);
+            int soc = int.Parse(Console.ReadLine());
 
             Console.Write("과학 점수 입력하세요: ");
-            string str4 = Console.ReadLine();
-            int sci = int.Parse(str4);
+            int sci = int.Parse(Console.ReadLine());
 
             int sum = kor + mat + soc + sci;
             float avr = sum / 4f;
