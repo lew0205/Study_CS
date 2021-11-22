@@ -28,10 +28,10 @@ namespace _067_Check
             return (kor + mat + eng);
         }
 
-        static void Average(int total, out float average)
-        {
+        //static void Average(int total, out float average)
+       // {
 
-        }
+        //}
 
         static void Main(string[] args)
         {
