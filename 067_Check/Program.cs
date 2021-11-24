@@ -23,15 +23,21 @@ namespace _067_Check
             eng = int.Parse(Console.ReadLine());
         }
 
-        static int Total(int kor,int mat,int eng)
+        static int Total(int kor, int mat, int eng)
         {
             return (kor + mat + eng);
         }
 
-        //static void Average(int total, out float average)
-       // {
+        static int TotalSum(int kor, int mat, int eng)
+        {
+            Console.WriteLine("kor: {0}, mat: {1}, eng: {2}", kor, mat, eng);
+            return kor + mat + eng;
+        }
 
-        //}
+        static void Average(int total, out float average)
+        {
+            average = total / 3f;
+        }
 
         static void Main(string[] args)
         {
@@ -41,7 +47,13 @@ namespace _067_Check
             int total;
             float average;
 
-            
+            Start();
+            Input(ref kor, ref mat, ref eng);
+            total = TotalSum(kor, mat, eng);
+            Average(total, out average);
+
+            Console.WriteLine("Total: {0}   Average: {1}", total, average);
+            Console.ReadKey();
         }
     }
 }
